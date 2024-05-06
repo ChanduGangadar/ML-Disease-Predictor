@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/css/index.css">
+<script type="text/javascript" src="/js/index.js"></script>
+
+<body>
+    <div class="container">
+        <nav>
+            <div id="logo">
+                <img src="/img/logo.png" alt="logo">
+                <h3>Med-Technician</h3>
+            </div>
+            <div id="pages">
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#">Login/Signup</a>
+            </div>
+        </nav>
+        <div class="main">
+            <div id="main-cont">
+                <div class="cont1">
+                    can analyze 133 symptoms and accurately predict the corresponding disease
+                    <img src="/img/analyze.png" alt="analyze">
+                </div>
+                <div class="cont2">
+                    <ul>
+                        <li>BASED ON ML MODEL<img src="/img/ml-model.png" alt="ml-model"></li>
+                        <li>VERY HIGH ACCURACY <img src="/img/accuracy.png" alt="accuracy"></li>
+                        <li>RELIABLE <img src="/img/reliable.png" alt="reliable"></li>
+                    </ul>
+                </div>
+            </div>
+            <form>
+                <img src="/img/select.png" alt="select">
+                <label for="Items"><b>SELECT-ITEMS:</b></label>
+                <input type="text" oninput=suggestoptions() id="input" placeholder="Type here.....">
+                <button onclick=selected(event)>Add</button>
+                <div id="options">
+
+                </div>
+                <img src="/img/selected.png" alt="">
+                <b>SELECTED-ITEMS:</b>
+                <div id="selected-items"></div>
+                <button onclick=SubmitItems(event)>Submit</button>
+                <div id="result">
+                    <img src="/img/result.png" alt="result">
+                    <h3>Result = </h3>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
